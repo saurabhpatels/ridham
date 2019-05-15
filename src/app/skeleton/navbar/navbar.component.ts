@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ConnectionService} from 'ng-connection-service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  isConnected = true;
+
+  constructor(private connectionService: ConnectionService) {
+    this.connectionService.monitor().subscribe(isConnected => {
+      this.isConnected = isConnected;
+    });
+  }
 
   ngOnInit() {
   }
-
 }

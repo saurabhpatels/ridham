@@ -8,7 +8,7 @@
   <div class="site-mobile-menu-body"></div>
 </div>
 
-<header class="site-navbar py-3" role="banner">
+<header [class.mat-elevation-z10]="true" class="site-navbar py-3" role="banner">
 
   <div class="container-fluid">
     <div class="row align-items-center">
@@ -55,3 +55,8 @@
   </div>
 
 </header>
+<div *ngIf="!isConnected" class="footer " style="background-color:#8fe0c6; color:white; ">
+  <div class="container-fluid text-center" style="padding-top: 10px;">
+    <mat-icon>warning</mat-icon> There Is No Internet Connection
+  </div>
+</div>

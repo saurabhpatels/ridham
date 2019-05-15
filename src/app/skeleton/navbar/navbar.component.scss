@@ -1,0 +1,24 @@
+.footer{
+  background: linear-gradient(281deg, #ff0000, #177f00, #000cb9, #b900aa, #5e00fb);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+  }
+}
