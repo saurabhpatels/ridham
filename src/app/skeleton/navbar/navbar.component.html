@@ -53,10 +53,10 @@
 
     </div>
   </div>
+  <div *ngIf="!isConnected" >
+    <div class="container-fluid text-center" style="padding-top: 10px;">
+      <span><img src="../../../assets/images/wifi.png"></span> &nbsp;&nbsp;There Is No Internet Connection
+    </div>
+  </div>
 
 </header>
-<div *ngIf="!isConnected" class="footer " style="background-color:#8fe0c6; color:white; ">
-  <div class="container-fluid text-center" style="padding-top: 10px;">
-    <mat-icon>warning</mat-icon> There Is No Internet Connection
-  </div>
-</div>
